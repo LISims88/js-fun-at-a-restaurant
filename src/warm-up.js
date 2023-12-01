@@ -65,11 +65,23 @@ if (inStock < 20){
 
 
 
+    if (stockCount >= 1){
+        console.log(`I'm going to eat some ${food}`)
+    } else {
+        console.log(`We need to get some more ${food}`)
+    }
+
+
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite food is [food]!'. Otherwise, log the
 // statement 'I recently ate [food]'. In either case, the value stored in
 // the "food" variable should be included in the logged statement.
 
+if (isFavorite === true) {
+    console.log(`My favorite food is ${food}`)
+} else{
+    console.log(`I recently ate ${food}`)
+}
 
 
 //------------------------- Arrays -------------------------//
@@ -77,6 +89,7 @@ if (inStock < 20){
 
 // Create a new variable "vegetables" and assign it to an Array of 5 different
 // vegetables, represented by their names as Strings.
+
 
 
 // Write the code to access the 3rd element of the Array, using bracket
