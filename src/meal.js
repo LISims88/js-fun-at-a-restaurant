@@ -17,7 +17,8 @@ var menuItemName = {
  return menuItemName
 }
 
-// write a function that addss to the array that adds ingredients and 
+// write a function that creates an array 
+//that then adds unique ingredients to said array
 
 function addIngredients(ingredientName, ingredients) {
   if(ingredients.push(ingredientName) != ingredientName) {
