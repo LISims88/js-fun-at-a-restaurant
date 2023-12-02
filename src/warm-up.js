@@ -90,19 +90,24 @@ if (isFavorite === true) {
 // Create a new variable "vegetables" and assign it to an Array of 5 different
 // vegetables, represented by their names as Strings.
 
+var vegetables =[
+    'corn', 'bok choy','zucchini','onion','rutabaga'
+]
 
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-
+vegetables[2]
 
 // Create a new variable "fruits" and assign it to an Array of 7
 // different fruits.
-
+ var fruits =[
+    'apples','bananas','clementine','dragon fruits','elderberries','fig','guava'
+ ]
 
 // Write the code to access the 5th element of the array, using bracket notation.
 
-
+fruits[4]
 //------------------------- Objects -------------------------//
 
 // Create a new variable called "groceryStore" and assign to it an object literal with two
