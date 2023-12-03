@@ -10,11 +10,11 @@ var {
 
 describe("order.js", function() {
   describe("takeOrder", function() {
-    it.skip("should be a function", function() {
+    it("should be a function", function() {
       assert.isFunction(takeOrder);
     });
 
-    it.skip("should add new orders to an order type list", function() {
+    it("should add new orders to an order type list", function() {
       var order1 = {
         orderNumber: 1,
         item: "burger",
@@ -120,7 +120,7 @@ describe("order.js", function() {
   }); 
 
   describe("refundOrder", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(refundOrder);
     });
 
@@ -192,7 +192,7 @@ describe("order.js", function() {
   });
 
   describe("listItems", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(listItems);
     });
 
@@ -264,7 +264,7 @@ describe("order.js", function() {
   });
 
   describe("searchOrder", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(searchOrder);
     });
 
