@@ -20,12 +20,11 @@ var menuItemName = {
 // write a function that addss to the array that adds ingredients and 
 
 function addIngredients(ingredientName, ingredients) {
-  if(ingredients.push(ingredientName) != ingredientName) {
-      return addIngredients;
+  if(ingredients.includes(ingredientName)) {
   } else{
-        ingredients.splice(3,1)
+        ingredients.push(ingredientName)
          //console.log(ingredientName)
-        return addIngredients
+         return ingredients
     }
   }
 
@@ -40,9 +39,6 @@ function formatPrice (price, symbol = '$'){
   return price
 }
 
-
-
-
 function decreasePrice (itemPrice){
   var price = itemPrice;
   var dicsount = 10;
@@ -50,14 +46,16 @@ function decreasePrice (itemPrice){
  return itemPrice - savings
 } 
 
+//this function should return a recipe object
 
-
-
-function createRecipe (item, ingredients){
-
-
+function createRecipe (nameMenuItem, foodIngredients, menuItemType) {
+var recipe = {
+    title : nameMenuItem, 
+    ingredients: foodIngredients,
+    type: menuItemType
+  }
+    return recipe
 }
-
 
 module.exports = {
   nameMenuItem,
@@ -67,5 +65,4 @@ module.exports = {
   decreasePrice,
   createRecipe
 }
-
 
